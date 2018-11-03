@@ -28,7 +28,7 @@ class ResponseParserTests: XCTestCase {
     }
 
     func testExample() {
-        XCTAssertEqual(ResponseParser.parse(body: content), "")
+        XCTAssertEqual(ResponseParser.parse(body: content), "04:35 PM")
     }
 
 }
