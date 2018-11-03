@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let request = RequestFactory.NewRequest(day: 3, month: 11, year: 2018)!
+        let request = RequestFactory.newRequest(day: 3, month: 11, year: 2018)!
         
         var dataFromCall: Data = Data()
         

@@ -10,7 +10,7 @@ import Foundation
 import os
 
 public class RequestFactory {
-    static func NewRequest(day: Int, month: Int, year: Int) -> URLRequest? {
+    static func newRequest(day: Int, month: Int, year: Int) -> URLRequest? {
         guard let url = URL(string: "https://tickets.amtrak.com/itd/amtrak") else {
             os_log("Couldn't parse the URL")
             return nil
