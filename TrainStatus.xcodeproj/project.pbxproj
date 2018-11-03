@@ -23,6 +23,8 @@
 		A2DC3F7C2189F2BF00413C92 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DC3F7B2189F2BF00413C92 /* NotificationController.swift */; };
 		A2DC3F7E2189F2BF00413C92 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DC3F7D2189F2BF00413C92 /* ComplicationController.swift */; };
 		A2DC3F802189F2C000413C92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2DC3F7F2189F2C000413C92 /* Assets.xcassets */; };
+		A2DC3F972189FC9D00413C92 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DC3F962189FC9D00413C92 /* RequestFactory.swift */; };
+		A2DC3F992189FCB500413C92 /* RequestFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DC3F982189FCB500413C92 /* RequestFactoryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +109,8 @@
 		A2DC3F7F2189F2C000413C92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2DC3F812189F2C000413C92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2DC3F822189F2C000413C92 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A2DC3F962189FC9D00413C92 /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
+		A2DC3F982189FCB500413C92 /* RequestFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactoryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +178,7 @@
 				A2DC3F452189F2BF00413C92 /* Assets.xcassets */,
 				A2DC3F472189F2BF00413C92 /* LaunchScreen.storyboard */,
 				A2DC3F4A2189F2BF00413C92 /* Info.plist */,
+				A2DC3F962189FC9D00413C92 /* RequestFactory.swift */,
 			);
 			path = TrainStatus;
 			sourceTree = "<group>";
@@ -183,6 +188,7 @@
 			children = (
 				A2DC3F532189F2BF00413C92 /* TrainStatusTests.swift */,
 				A2DC3F552189F2BF00413C92 /* Info.plist */,
+				A2DC3F982189FCB500413C92 /* RequestFactoryTests.swift */,
 			);
 			path = TrainStatusTests;
 			sourceTree = "<group>";
@@ -412,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2DC3F972189FC9D00413C92 /* RequestFactory.swift in Sources */,
 				A2DC3F412189F2BD00413C92 /* ViewController.swift in Sources */,
 				A2DC3F3F2189F2BD00413C92 /* AppDelegate.swift in Sources */,
 			);
@@ -421,6 +428,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2DC3F992189FCB500413C92 /* RequestFactoryTests.swift in Sources */,
 				A2DC3F542189F2BF00413C92 /* TrainStatusTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
