@@ -17,6 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let request = RequestFactory.NewRequest(day: 3, month: 11, year: 2018)!
+        
+        var dataFromCall: Data = Data()
+        
+        let dataTask = URLSession.shared.dataTask(with: request) { data, response, error in
+            dataFromCall = data!
+            print(String(data: dataFromCall, encoding: String.Encoding.utf8)!)
+        }
+        dataTask.resume()
+        
         return true
     }
 
