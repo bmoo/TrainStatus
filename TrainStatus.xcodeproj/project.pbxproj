@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A22F8547218E4D900040F759 /* response.txt in Resources */ = {isa = PBXBuildFile; fileRef = A22F8546218E4D900040F759 /* response.txt */; };
+		A22F8549218E629C0040F759 /* ResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22F8548218E629C0040F759 /* ResponseParser.swift */; };
+		A2AE478C218E4A3800345C70 /* ResponseParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AE478B218E4A3800345C70 /* ResponseParserTests.swift */; };
 		A2DC3F3F2189F2BD00413C92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DC3F3E2189F2BD00413C92 /* AppDelegate.swift */; };
 		A2DC3F412189F2BD00413C92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DC3F402189F2BD00413C92 /* ViewController.swift */; };
 		A2DC3F442189F2BD00413C92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2DC3F422189F2BD00413C92 /* Main.storyboard */; };
@@ -84,6 +87,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A22F8546218E4D900040F759 /* response.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = response.txt; sourceTree = "<group>"; };
+		A22F8548218E629C0040F759 /* ResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseParser.swift; sourceTree = "<group>"; };
+		A2AE478B218E4A3800345C70 /* ResponseParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseParserTests.swift; sourceTree = "<group>"; };
 		A2DC3F3B2189F2BD00413C92 /* TrainStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainStatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DC3F3E2189F2BD00413C92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2DC3F402189F2BD00413C92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -179,6 +185,7 @@
 				A2DC3F472189F2BF00413C92 /* LaunchScreen.storyboard */,
 				A2DC3F4A2189F2BF00413C92 /* Info.plist */,
 				A2DC3F962189FC9D00413C92 /* RequestFactory.swift */,
+				A22F8548218E629C0040F759 /* ResponseParser.swift */,
 			);
 			path = TrainStatus;
 			sourceTree = "<group>";
@@ -189,6 +196,8 @@
 				A2DC3F532189F2BF00413C92 /* TrainStatusTests.swift */,
 				A2DC3F552189F2BF00413C92 /* Info.plist */,
 				A2DC3F982189FCB500413C92 /* RequestFactoryTests.swift */,
+				A2AE478B218E4A3800345C70 /* ResponseParserTests.swift */,
+				A22F8546218E4D900040F759 /* response.txt */,
 			);
 			path = TrainStatusTests;
 			sourceTree = "<group>";
@@ -384,6 +393,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A22F8547218E4D900040F759 /* response.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +431,7 @@
 				A2DC3F972189FC9D00413C92 /* RequestFactory.swift in Sources */,
 				A2DC3F412189F2BD00413C92 /* ViewController.swift in Sources */,
 				A2DC3F3F2189F2BD00413C92 /* AppDelegate.swift in Sources */,
+				A22F8549218E629C0040F759 /* ResponseParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +441,7 @@
 			files = (
 				A2DC3F992189FCB500413C92 /* RequestFactoryTests.swift in Sources */,
 				A2DC3F542189F2BF00413C92 /* TrainStatusTests.swift in Sources */,
+				A2AE478C218E4A3800345C70 /* ResponseParserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
