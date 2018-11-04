@@ -14,7 +14,10 @@ class ResponseParser {
             let choppedBeginning = body[range.upperBound..<body.endIndex].uppercased()
             let nextNewline = choppedBeginning.firstIndex(of: "'")!
             
-            return String(choppedBeginning[choppedBeginning.startIndex..<nextNewline])
+            let response = String(choppedBeginning[choppedBeginning.startIndex..<nextNewline])
+            if (response == " ") {
+                return "Status Unavailable"
+            }
         }
         
         return "04:35 PM"

@@ -11,24 +11,24 @@ import XCTest
 
 class ResponseParserTests: XCTestCase {
     
-    var content: String = ""
-
-    override func setUp() {
+    func testNotYetArrived() {
         let path = Bundle(for: ResponseParserTests.self).path(forResource: "response", ofType: "txt")
         do {
-            content = try String(contentsOfFile: path!, encoding: String.Encoding.utf8)
+            let content = try String(contentsOfFile: path!, encoding: String.Encoding.utf8)
+            XCTAssertEqual(ResponseParser.parse(body: content), "04:35 PM")
         } catch {
             XCTFail(error.localizedDescription)
         }
-        
     }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        XCTAssertEqual(ResponseParser.parse(body: content), "04:35 PM")
+    
+    func testArrived() {
+        let path = Bundle(for: ResponseParserTests.self).path(forResource: "arrivedResponse", ofType: "txt")
+        do {
+            let content = try String(contentsOfFile: path!, encoding: String.Encoding.utf8)
+            XCTAssertEqual(ResponseParser.parse(body: content), "Status Unavailable")
+        } catch {
+            XCTFail(error.localizedDescription)
+        }
     }
 
 }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A22F8547218E4D900040F759 /* response.txt in Resources */ = {isa = PBXBuildFile; fileRef = A22F8546218E4D900040F759 /* response.txt */; };
 		A22F8549218E629C0040F759 /* ResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22F8548218E629C0040F759 /* ResponseParser.swift */; };
+		A22F854B218E73110040F759 /* arrivedResponse.txt in Resources */ = {isa = PBXBuildFile; fileRef = A22F854A218E73110040F759 /* arrivedResponse.txt */; };
 		A2AE478C218E4A3800345C70 /* ResponseParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AE478B218E4A3800345C70 /* ResponseParserTests.swift */; };
 		A2DC3F3F2189F2BD00413C92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DC3F3E2189F2BD00413C92 /* AppDelegate.swift */; };
 		A2DC3F412189F2BD00413C92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DC3F402189F2BD00413C92 /* ViewController.swift */; };
@@ -89,6 +90,7 @@
 /* Begin PBXFileReference section */
 		A22F8546218E4D900040F759 /* response.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = response.txt; sourceTree = "<group>"; };
 		A22F8548218E629C0040F759 /* ResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseParser.swift; sourceTree = "<group>"; };
+		A22F854A218E73110040F759 /* arrivedResponse.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = arrivedResponse.txt; sourceTree = "<group>"; };
 		A2AE478B218E4A3800345C70 /* ResponseParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseParserTests.swift; sourceTree = "<group>"; };
 		A2DC3F3B2189F2BD00413C92 /* TrainStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainStatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DC3F3E2189F2BD00413C92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 				A2DC3F982189FCB500413C92 /* RequestFactoryTests.swift */,
 				A2AE478B218E4A3800345C70 /* ResponseParserTests.swift */,
 				A22F8546218E4D900040F759 /* response.txt */,
+				A22F854A218E73110040F759 /* arrivedResponse.txt */,
 			);
 			path = TrainStatusTests;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A22F8547218E4D900040F759 /* response.txt in Resources */,
+				A22F854B218E73110040F759 /* arrivedResponse.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
