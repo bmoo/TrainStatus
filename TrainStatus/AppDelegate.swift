@@ -35,8 +35,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        let mainController = self.window!.rootViewController as! ViewController
+        mainController.timeLabel.text = "Loading..."
+        
+        let currentDate = Date()
+        let day = Calendar.current.component(.day, from: currentDate)
+        let month = Calendar.current.component(.month, from: currentDate)
+        let year = Calendar.current.component(.year, from: currentDate)
+        
+        let request = RequestFactory.newRequest(day: day, month: month, year: year)!
+        
+        let dataTask = URLSession.shared.dataTask(with: request, completionHandler: dataCallback)
+        // set a delegate here so that redirects don't go to a http:// URL and violate security policy
+        dataTask.resume()
     }
+    
+    func dataCallback(data: Data?, response: URLResponse?, error: Error?) -> Void {
+        let parsedData = ResponseParser.parse(body: String(data: data!, encoding: String.Encoding.utf8)!)
+        os_log("Got %@", parsedData)
+        DispatchQueue.main.async {
+            let mainController = self.window!.rootViewController as! ViewController
+            mainController.timeLabel.text = parsedData
+        }
+    }
+
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
