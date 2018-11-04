@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.timeLabel.text = "Loading..."
+        
         
         let currentDate = Date()
         let day = Calendar.current.component(.day, from: currentDate)
