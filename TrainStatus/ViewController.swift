@@ -23,17 +23,15 @@ class ViewController: UIViewController {
 
         let request = RequestFactory.newRequest(day: day, month: month, year: year)!
         
-        let dataTask = URLSession.shared.dataTask(with: request) { data, response, error in
-            let parsedData = ResponseParser.parse(body: String(data: data!, encoding: String.Encoding.utf8)!)
-            os_log("Got %@", parsedData)
-            DispatchQueue.main.async {
-                self.timeLabel.text = parsedData
-            }
-        }
+        let dataTask = URLSession.shared.dataTask(with: request, completionHandler: dataCallback)
         dataTask.resume()
-
     }
 
-
+    func dataCallback(data: Data?, response: URLResponse?, error: Error?) -> Void {
+        let parsedData = ResponseParser.parse(body: String(data: data!, encoding: String.Encoding.utf8)!)
+        os_log("Got %@", parsedData)
+        DispatchQueue.main.async {
+            self.timeLabel.text = parsedData
+        }
+    }
 }
-
