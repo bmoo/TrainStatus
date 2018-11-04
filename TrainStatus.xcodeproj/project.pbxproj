@@ -16,7 +16,6 @@
 		A2DC3F442189F2BD00413C92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2DC3F422189F2BD00413C92 /* Main.storyboard */; };
 		A2DC3F462189F2BF00413C92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2DC3F452189F2BF00413C92 /* Assets.xcassets */; };
 		A2DC3F492189F2BF00413C92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2DC3F472189F2BF00413C92 /* LaunchScreen.storyboard */; };
-		A2DC3F542189F2BF00413C92 /* TrainStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DC3F532189F2BF00413C92 /* TrainStatusTests.swift */; };
 		A2DC3F5F2189F2BF00413C92 /* TrainStatusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DC3F5E2189F2BF00413C92 /* TrainStatusUITests.swift */; };
 		A2DC3F642189F2BF00413C92 /* TrainStatus WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A2DC3F632189F2BF00413C92 /* TrainStatus WatchKit App.app */; };
 		A2DC3F6A2189F2BF00413C92 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2DC3F682189F2BF00413C92 /* Interface.storyboard */; };
@@ -100,7 +99,6 @@
 		A2DC3F482189F2BF00413C92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2DC3F4A2189F2BF00413C92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2DC3F4F2189F2BF00413C92 /* TrainStatusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrainStatusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2DC3F532189F2BF00413C92 /* TrainStatusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainStatusTests.swift; sourceTree = "<group>"; };
 		A2DC3F552189F2BF00413C92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2DC3F5A2189F2BF00413C92 /* TrainStatusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrainStatusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DC3F5E2189F2BF00413C92 /* TrainStatusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainStatusUITests.swift; sourceTree = "<group>"; };
@@ -195,7 +193,6 @@
 		A2DC3F522189F2BF00413C92 /* TrainStatusTests */ = {
 			isa = PBXGroup;
 			children = (
-				A2DC3F532189F2BF00413C92 /* TrainStatusTests.swift */,
 				A2DC3F552189F2BF00413C92 /* Info.plist */,
 				A2DC3F982189FCB500413C92 /* RequestFactoryTests.swift */,
 				A2AE478B218E4A3800345C70 /* ResponseParserTests.swift */,
@@ -444,7 +441,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2DC3F992189FCB500413C92 /* RequestFactoryTests.swift in Sources */,
-				A2DC3F542189F2BF00413C92 /* TrainStatusTests.swift in Sources */,
 				A2AE478C218E4A3800345C70 /* ResponseParserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

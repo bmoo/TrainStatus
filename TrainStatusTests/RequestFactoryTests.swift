@@ -12,12 +12,12 @@ import XCTest
 class RequestFactoryTests: XCTestCase {
     
     func testHttpMethod() {
-        let result = RequestFactory.newRequest(day: 1, month: 2, year: 2017)!
+        let result = RequestFactory.newRequest(day: -1, month: -1, year: -1)!
         XCTAssertEqual("POST", result.httpMethod)
     }
     
     func testRequestValues() {
-        let result = RequestFactory.newRequest(day: 1, month: 2, year: 2017)!
+        let result = RequestFactory.newRequest(day: -1, month: -1, year: -1)!
         let fields = result.allHTTPHeaderFields!
         
         XCTAssertEqual("text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", fields["Accept"])
