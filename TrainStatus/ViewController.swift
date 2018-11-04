@@ -15,8 +15,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        let request = RequestFactory.newRequest(day: 3, month: 11, year: 2018)!
+        
+        let currentDate = Date()
+        let day = Calendar.current.component(.day, from: currentDate)
+        let month = Calendar.current.component(.month, from: currentDate)
+        let year = Calendar.current.component(.year, from: currentDate)
+
+        let request = RequestFactory.newRequest(day: day, month: month, year: year)!
         
         let dataTask = URLSession.shared.dataTask(with: request) { data, response, error in
             let parsedData = ResponseParser.parse(body: String(data: data!, encoding: String.Encoding.utf8)!)
