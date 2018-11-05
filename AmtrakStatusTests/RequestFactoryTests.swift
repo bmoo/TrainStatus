@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import TrainStatus
+@testable import AmtrakStatus
 
 class RequestFactoryTests: XCTestCase {
     

@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import TrainStatus
+@testable import AmtrakStatus
 
 class ResponseParserTests: XCTestCase {
     

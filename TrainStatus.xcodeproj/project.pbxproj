@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A22F8547218E4D900040F759 /* response.txt in Resources */ = {isa = PBXBuildFile; fileRef = A22F8546218E4D900040F759 /* response.txt */; };
-		A22F8549218E629C0040F759 /* ResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22F8548218E629C0040F759 /* ResponseParser.swift */; };
-		A22F854B218E73110040F759 /* arrivedResponse.txt in Resources */ = {isa = PBXBuildFile; fileRef = A22F854A218E73110040F759 /* arrivedResponse.txt */; };
 		A22F8560218F2E4D0040F759 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A22F855F218F2E4D0040F759 /* Assets.xcassets */; };
-		A2AE478C218E4A3800345C70 /* ResponseParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AE478B218E4A3800345C70 /* ResponseParserTests.swift */; };
+		A22F8568218FB0530040F759 /* AmtrakStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22F8567218FB0530040F759 /* AmtrakStatus.swift */; };
+		A22F856C218FB05F0040F759 /* ResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22F8548218E629C0040F759 /* ResponseParser.swift */; };
+		A22F856D218FB05F0040F759 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DC3F962189FC9D00413C92 /* RequestFactory.swift */; };
+		A22F8575218FB0B60040F759 /* AmtrakStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22F8574218FB0B60040F759 /* AmtrakStatusTests.swift */; };
+		A22F8577218FB0B60040F759 /* libAmtrakStatus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A22F8565218FB0530040F759 /* libAmtrakStatus.a */; };
+		A22F857D218FB0CE0040F759 /* RequestFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DC3F982189FCB500413C92 /* RequestFactoryTests.swift */; };
+		A22F857E218FB0CE0040F759 /* ResponseParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AE478B218E4A3800345C70 /* ResponseParserTests.swift */; };
+		A22F8580218FB1130040F759 /* libAmtrakStatus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A22F8565218FB0530040F759 /* libAmtrakStatus.a */; };
+		A22F8581218FC2FD0040F759 /* response.txt in Resources */ = {isa = PBXBuildFile; fileRef = A22F8546218E4D900040F759 /* response.txt */; };
+		A22F8582218FC2FD0040F759 /* arrivedResponse.txt in Resources */ = {isa = PBXBuildFile; fileRef = A22F854A218E73110040F759 /* arrivedResponse.txt */; };
 		A2DC3F3F2189F2BD00413C92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DC3F3E2189F2BD00413C92 /* AppDelegate.swift */; };
 		A2DC3F412189F2BD00413C92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DC3F402189F2BD00413C92 /* ViewController.swift */; };
 		A2DC3F442189F2BD00413C92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2DC3F422189F2BD00413C92 /* Main.storyboard */; };
@@ -26,11 +32,16 @@
 		A2DC3F7C2189F2BF00413C92 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DC3F7B2189F2BF00413C92 /* NotificationController.swift */; };
 		A2DC3F7E2189F2BF00413C92 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DC3F7D2189F2BF00413C92 /* ComplicationController.swift */; };
 		A2DC3F802189F2C000413C92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2DC3F7F2189F2C000413C92 /* Assets.xcassets */; };
-		A2DC3F972189FC9D00413C92 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DC3F962189FC9D00413C92 /* RequestFactory.swift */; };
-		A2DC3F992189FCB500413C92 /* RequestFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DC3F982189FCB500413C92 /* RequestFactoryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A22F8578218FB0B60040F759 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2DC3F332189F2BD00413C92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A22F8564218FB0530040F759;
+			remoteInfo = AmtrakStatus;
+		};
 		A2DC3F502189F2BF00413C92 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A2DC3F332189F2BD00413C92 /* Project object */;
@@ -62,6 +73,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		A22F8563218FB0530040F759 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A2DC3F882189F2C000413C92 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -91,6 +111,11 @@
 		A22F8548218E629C0040F759 /* ResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseParser.swift; sourceTree = "<group>"; };
 		A22F854A218E73110040F759 /* arrivedResponse.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = arrivedResponse.txt; sourceTree = "<group>"; };
 		A22F855F218F2E4D0040F759 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A22F8565218FB0530040F759 /* libAmtrakStatus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAmtrakStatus.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A22F8567218FB0530040F759 /* AmtrakStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmtrakStatus.swift; sourceTree = "<group>"; };
+		A22F8572218FB0B60040F759 /* AmtrakStatusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmtrakStatusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A22F8574218FB0B60040F759 /* AmtrakStatusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmtrakStatusTests.swift; sourceTree = "<group>"; };
+		A22F8576218FB0B60040F759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2AE478B218E4A3800345C70 /* ResponseParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseParserTests.swift; sourceTree = "<group>"; };
 		A2DC3F3B2189F2BD00413C92 /* TrainStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainStatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DC3F3E2189F2BD00413C92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,10 +145,26 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A22F8562218FB0530040F759 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A22F856F218FB0B60040F759 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A22F8577218FB0B60040F759 /* libAmtrakStatus.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A2DC3F382189F2BD00413C92 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A22F8580218FB1130040F759 /* libAmtrakStatus.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +192,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A22F8566218FB0530040F759 /* AmtrakStatus */ = {
+			isa = PBXGroup;
+			children = (
+				A2DC3F962189FC9D00413C92 /* RequestFactory.swift */,
+				A22F8548218E629C0040F759 /* ResponseParser.swift */,
+				A22F8567218FB0530040F759 /* AmtrakStatus.swift */,
+			);
+			path = AmtrakStatus;
+			sourceTree = "<group>";
+		};
+		A22F8573218FB0B60040F759 /* AmtrakStatusTests */ = {
+			isa = PBXGroup;
+			children = (
+				A22F8546218E4D900040F759 /* response.txt */,
+				A22F854A218E73110040F759 /* arrivedResponse.txt */,
+				A2DC3F982189FCB500413C92 /* RequestFactoryTests.swift */,
+				A2AE478B218E4A3800345C70 /* ResponseParserTests.swift */,
+				A22F8574218FB0B60040F759 /* AmtrakStatusTests.swift */,
+				A22F8576218FB0B60040F759 /* Info.plist */,
+			);
+			path = AmtrakStatusTests;
+			sourceTree = "<group>";
+		};
+		A22F857F218FB1130040F759 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A2DC3F322189F2BD00413C92 = {
 			isa = PBXGroup;
 			children = (
@@ -159,7 +230,10 @@
 				A2DC3F5D2189F2BF00413C92 /* TrainStatusUITests */,
 				A2DC3F672189F2BF00413C92 /* TrainStatus WatchKit App */,
 				A2DC3F762189F2BF00413C92 /* TrainStatus WatchKit Extension */,
+				A22F8566218FB0530040F759 /* AmtrakStatus */,
+				A22F8573218FB0B60040F759 /* AmtrakStatusTests */,
 				A2DC3F3C2189F2BD00413C92 /* Products */,
+				A22F857F218FB1130040F759 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,6 +245,8 @@
 				A2DC3F5A2189F2BF00413C92 /* TrainStatusUITests.xctest */,
 				A2DC3F632189F2BF00413C92 /* TrainStatus WatchKit App.app */,
 				A2DC3F722189F2BF00413C92 /* TrainStatus WatchKit Extension.appex */,
+				A22F8565218FB0530040F759 /* libAmtrakStatus.a */,
+				A22F8572218FB0B60040F759 /* AmtrakStatusTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,8 +260,6 @@
 				A22F855F218F2E4D0040F759 /* Assets.xcassets */,
 				A2DC3F472189F2BF00413C92 /* LaunchScreen.storyboard */,
 				A2DC3F4A2189F2BF00413C92 /* Info.plist */,
-				A2DC3F962189FC9D00413C92 /* RequestFactory.swift */,
-				A22F8548218E629C0040F759 /* ResponseParser.swift */,
 			);
 			path = TrainStatus;
 			sourceTree = "<group>";
@@ -194,10 +268,6 @@
 			isa = PBXGroup;
 			children = (
 				A2DC3F552189F2BF00413C92 /* Info.plist */,
-				A2DC3F982189FCB500413C92 /* RequestFactoryTests.swift */,
-				A2AE478B218E4A3800345C70 /* ResponseParserTests.swift */,
-				A22F8546218E4D900040F759 /* response.txt */,
-				A22F854A218E73110040F759 /* arrivedResponse.txt */,
 			);
 			path = TrainStatusTests;
 			sourceTree = "<group>";
@@ -238,6 +308,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A22F8564218FB0530040F759 /* AmtrakStatus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A22F856B218FB0530040F759 /* Build configuration list for PBXNativeTarget "AmtrakStatus" */;
+			buildPhases = (
+				A22F8561218FB0530040F759 /* Sources */,
+				A22F8562218FB0530040F759 /* Frameworks */,
+				A22F8563218FB0530040F759 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmtrakStatus;
+			productName = AmtrakStatus;
+			productReference = A22F8565218FB0530040F759 /* libAmtrakStatus.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A22F8571218FB0B60040F759 /* AmtrakStatusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A22F857A218FB0B60040F759 /* Build configuration list for PBXNativeTarget "AmtrakStatusTests" */;
+			buildPhases = (
+				A22F856E218FB0B60040F759 /* Sources */,
+				A22F856F218FB0B60040F759 /* Frameworks */,
+				A22F8570218FB0B60040F759 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A22F8579218FB0B60040F759 /* PBXTargetDependency */,
+			);
+			name = AmtrakStatusTests;
+			productName = AmtrakStatusTests;
+			productReference = A22F8572218FB0B60040F759 /* AmtrakStatusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A2DC3F3A2189F2BD00413C92 /* TrainStatus */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2DC3F8D2189F2C000413C92 /* Build configuration list for PBXNativeTarget "TrainStatus" */;
@@ -337,6 +442,12 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Brad Moore";
 				TargetAttributes = {
+					A22F8564218FB0530040F759 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					A22F8571218FB0B60040F759 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					A2DC3F3A2189F2BD00413C92 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -374,11 +485,22 @@
 				A2DC3F592189F2BF00413C92 /* TrainStatusUITests */,
 				A2DC3F622189F2BF00413C92 /* TrainStatus WatchKit App */,
 				A2DC3F712189F2BF00413C92 /* TrainStatus WatchKit Extension */,
+				A22F8564218FB0530040F759 /* AmtrakStatus */,
+				A22F8571218FB0B60040F759 /* AmtrakStatusTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A22F8570218FB0B60040F759 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A22F8581218FC2FD0040F759 /* response.txt in Resources */,
+				A22F8582218FC2FD0040F759 /* arrivedResponse.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A2DC3F392189F2BD00413C92 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -393,8 +515,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A22F8547218E4D900040F759 /* response.txt in Resources */,
-				A22F854B218E73110040F759 /* arrivedResponse.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,14 +545,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A22F8561218FB0530040F759 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A22F856D218FB05F0040F759 /* RequestFactory.swift in Sources */,
+				A22F8568218FB0530040F759 /* AmtrakStatus.swift in Sources */,
+				A22F856C218FB05F0040F759 /* ResponseParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A22F856E218FB0B60040F759 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A22F857D218FB0CE0040F759 /* RequestFactoryTests.swift in Sources */,
+				A22F8575218FB0B60040F759 /* AmtrakStatusTests.swift in Sources */,
+				A22F857E218FB0CE0040F759 /* ResponseParserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A2DC3F372189F2BD00413C92 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2DC3F972189FC9D00413C92 /* RequestFactory.swift in Sources */,
 				A2DC3F412189F2BD00413C92 /* ViewController.swift in Sources */,
 				A2DC3F3F2189F2BD00413C92 /* AppDelegate.swift in Sources */,
-				A22F8549218E629C0040F759 /* ResponseParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,8 +578,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2DC3F992189FCB500413C92 /* RequestFactoryTests.swift in Sources */,
-				A2AE478C218E4A3800345C70 /* ResponseParserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +603,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A22F8579218FB0B60040F759 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A22F8564218FB0530040F759 /* AmtrakStatus */;
+			targetProxy = A22F8578218FB0B60040F759 /* PBXContainerItemProxy */;
+		};
 		A2DC3F512189F2BF00413C92 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A2DC3F3A2189F2BD00413C92 /* TrainStatus */;
@@ -517,6 +658,68 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A22F8569218FB0530040F759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 79KQTL9372;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A22F856A218FB0530040F759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 79KQTL9372;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A22F857B218FB0B60040F759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 79KQTL9372;
+				INFOPLIST_FILE = AmtrakStatusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.bradmoore.AmtrakStatusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A22F857C218FB0B60040F759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 79KQTL9372;
+				INFOPLIST_FILE = AmtrakStatusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.bradmoore.AmtrakStatusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		A2DC3F832189F2C000413C92 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -836,6 +1039,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A22F856B218FB0530040F759 /* Build configuration list for PBXNativeTarget "AmtrakStatus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A22F8569218FB0530040F759 /* Debug */,
+				A22F856A218FB0530040F759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A22F857A218FB0B60040F759 /* Build configuration list for PBXNativeTarget "AmtrakStatusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A22F857B218FB0B60040F759 /* Debug */,
+				A22F857C218FB0B60040F759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A2DC3F362189F2BD00413C92 /* Build configuration list for PBXProject "TrainStatus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
