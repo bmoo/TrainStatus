@@ -10,14 +10,14 @@ import Foundation
 import os
 
 public class ResponseParser {
-    public static func parse(body: String) -> String {
+    public static func parse(body: String) -> String? {
         if let range = body.range(of: "EstimatedArriveTime:'") {
             let choppedBeginning = body[range.upperBound..<body.endIndex].uppercased()
             let nextNewline = choppedBeginning.firstIndex(of: "'")!
             
             let response = String(choppedBeginning[choppedBeginning.startIndex..<nextNewline])
             if (response == " ") {
-                return "Status Unavailable"
+                return nil
             }
             
             os_log("Parsed Amtrak response %@", response)
@@ -25,6 +25,6 @@ public class ResponseParser {
             return response
         }
         
-        return "Status Unavailable"
+        return nil
     }
 }

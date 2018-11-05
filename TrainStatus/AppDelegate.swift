@@ -53,7 +53,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func dataCallback(data: Data?, response: URLResponse?, error: Error?) -> Void {
         let parsedData = ResponseParser.parse(body: String(data: data!, encoding: String.Encoding.utf8)!)
-        os_log("Got %@", parsedData)
         DispatchQueue.main.async {
             let mainController = self.window!.rootViewController as! ViewController
             mainController.timeLabel.text = parsedData

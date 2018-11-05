@@ -25,7 +25,17 @@ class ResponseParserTests: XCTestCase {
         let path = Bundle(for: ResponseParserTests.self).path(forResource: "arrivedResponse", ofType: "txt")
         do {
             let content = try String(contentsOfFile: path!, encoding: String.Encoding.utf8)
-            XCTAssertEqual(ResponseParser.parse(body: content), "Status Unavailable")
+            XCTAssertNil(ResponseParser.parse(body: content))
+        } catch {
+            XCTFail(error.localizedDescription)
+        }
+    }
+    
+    func testLateBeforeArrival() {
+        let path = Bundle(for: ResponseParserTests.self).path(forResource: "sixminuteslate", ofType: "txt")
+        do {
+            let content = try String(contentsOfFile: path!, encoding: String.Encoding.utf8)
+            XCTAssertEqual(ResponseParser.parse(body: content), "04:41 PM")
         } catch {
             XCTFail(error.localizedDescription)
         }

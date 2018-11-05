@@ -18,6 +18,7 @@
 		A22F8580218FB1130040F759 /* libAmtrakStatus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A22F8565218FB0530040F759 /* libAmtrakStatus.a */; };
 		A22F8581218FC2FD0040F759 /* response.txt in Resources */ = {isa = PBXBuildFile; fileRef = A22F8546218E4D900040F759 /* response.txt */; };
 		A22F8582218FC2FD0040F759 /* arrivedResponse.txt in Resources */ = {isa = PBXBuildFile; fileRef = A22F854A218E73110040F759 /* arrivedResponse.txt */; };
+		A22F8584218FC47C0040F759 /* sixminuteslate.txt in Resources */ = {isa = PBXBuildFile; fileRef = A22F8583218FC47C0040F759 /* sixminuteslate.txt */; };
 		A2DC3F3F2189F2BD00413C92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DC3F3E2189F2BD00413C92 /* AppDelegate.swift */; };
 		A2DC3F412189F2BD00413C92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DC3F402189F2BD00413C92 /* ViewController.swift */; };
 		A2DC3F442189F2BD00413C92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2DC3F422189F2BD00413C92 /* Main.storyboard */; };
@@ -116,6 +117,7 @@
 		A22F8572218FB0B60040F759 /* AmtrakStatusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmtrakStatusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A22F8574218FB0B60040F759 /* AmtrakStatusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmtrakStatusTests.swift; sourceTree = "<group>"; };
 		A22F8576218FB0B60040F759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A22F8583218FC47C0040F759 /* sixminuteslate.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = sixminuteslate.txt; sourceTree = "<group>"; };
 		A2AE478B218E4A3800345C70 /* ResponseParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseParserTests.swift; sourceTree = "<group>"; };
 		A2DC3F3B2189F2BD00413C92 /* TrainStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainStatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DC3F3E2189F2BD00413C92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 				A2AE478B218E4A3800345C70 /* ResponseParserTests.swift */,
 				A22F8574218FB0B60040F759 /* AmtrakStatusTests.swift */,
 				A22F8576218FB0B60040F759 /* Info.plist */,
+				A22F8583218FC47C0040F759 /* sixminuteslate.txt */,
 			);
 			path = AmtrakStatusTests;
 			sourceTree = "<group>";
@@ -496,6 +499,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A22F8584218FC47C0040F759 /* sixminuteslate.txt in Resources */,
 				A22F8581218FC2FD0040F759 /* response.txt in Resources */,
 				A22F8582218FC2FD0040F759 /* arrivedResponse.txt in Resources */,
 			);
